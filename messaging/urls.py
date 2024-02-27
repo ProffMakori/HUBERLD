@@ -1,12 +1,8 @@
 
 from django.contrib import admin
 from django.urls import path
-from authentication import views
+from messaging import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('signup/', views.signup, name='signup'),
-    path('login/', views.login_view, name='login'),
-    path('add_personal_info/', views.add_personal_info, name='add_personal_info'),
-
+    path('chat/', views.chat, name='chat'),
 ]
